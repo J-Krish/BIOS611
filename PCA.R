@@ -5,7 +5,7 @@ library(MASS)
 library(gbm)
 library(matlab)
 
-df<-read.csv('work/derived_data/clean.csv')
+df<-read.csv('derived_data/clean.csv')
 df_pca<-data.frame(df[4:25])
 df_pca <- as.data.frame(sapply(df_pca, as.numeric))
 df_pca[1:18]<- as.data.frame(sapply(df_pca[1:18], scale))
@@ -20,7 +20,7 @@ colnames(prop_var_df)<-c("PC", "Proportion")
 prop_plot<-ggplot(prop_var_df, aes(x=PC, y=Proportion))+
       geom_col()+
       labs(title="Proportion of Variance")
-ggsave("work/figures/prop_plot.png",plot=prop_plot)
+ggsave("figures/prop_plot.png",plot=prop_plot)
 
 #Plot: REFF has a strong negative correlation along PC1, while the 3P 
 #variables seem to be those weighted most along PC2 (positive association) 
@@ -35,10 +35,8 @@ df_plot<-data.frame(PC1, PC2)
 HOFbiplot<-ggplot(df_plot, aes(PC1, PC2)) +
   geom_point(aes(color=factor(df$HOF)), alpha=0.5)
 
-ggsave("work/figures/HOFbiplot.png",plot=HOFbiplot)
+ggsave("figures/HOFbiplot.png",plot=HOFbiplot)
 
-png("work/figures/biplot_total.png")
+png("figures/biplot_total.png")
 biplot(pca_result, dpi=1200)
 dev.off()
-
-

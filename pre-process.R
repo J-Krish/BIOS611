@@ -1,7 +1,7 @@
 library(tidyverse)
 library(dplyr)
 
-df<-read.csv('work/source_data/rookie.csv')
+df<-read.csv('source_data/rookie.csv')
 
 #Eval for missing data
 col_names<-colnames(df)
@@ -34,5 +34,5 @@ sum(df$HOF==0)
 
 #Rename variables to indicate rookie year
 rookie <- df1 %>% rename_with(~paste0("R", .), GP:EFF)
-write_csv(rookie, "work/derived_data/clean.csv")
+write_csv(rookie, "derived_data/clean.csv")
 
