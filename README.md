@@ -40,3 +40,6 @@ Open a browser and visit https://localhost:8787 to connect to RStudio. Use
 "rstudio" as the username and your specified password as your password. 
 If you are using a system-generated password, copy and paste the 
 generated password from your command prompt into the password field.
+
+Finally, upon opening RStudio, please change the working directory to work by
+inputing "cd work" into the RStudio terminal.
