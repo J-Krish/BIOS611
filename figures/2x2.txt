@@ -1,0 +1,3 @@
+                  HOF non-HOF
+Predicted HOF     40  213    
+Predicted non-HOF 5   1240   

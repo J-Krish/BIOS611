@@ -1,0 +1,18 @@
+                Name.x HOF HOF_pred       pred
+14         Joel Embiid   0        1 0.57189139
+20          Chris Paul   0        1 0.41447089
+34       Blake Griffin   0        1 0.30227419
+40        LeBron James   0        1 0.27111780
+69        Kyrie Irving   0        1 0.15299503
+97  Karl-Anthony Towns   0        1 0.10638682
+113      Anthony Davis   0        1 0.08595115
+117       Kevin Durant   0        1 0.08328963
+127          John Wall   0        1 0.07827621
+165        Ricky Rubio   0        1 0.06035827
+186     Andre Drummond   0        1 0.05096987
+188  Russell Westbrook   0        1 0.05023420
+213      Stephen Curry   0        1 0.04369266
+229        Brook Lopez   0        1 0.03807738
+235     Victor Oladipo   0        1 0.03560338
+250     Damian Lillard   0        1 0.03284958
+251      Kawhi Leonard   0        1 0.03249657

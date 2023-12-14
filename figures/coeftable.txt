@@ -1,0 +1,25 @@
+
+Call:
+glm(formula = HOF ~ ., family = "binomial", data = df[, c("HOF", 
+    selected[1:6])])
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)   
+(Intercept)  101.15824   46.61926   2.170  0.03002 * 
+Year.Drafted  -0.05339    0.02334  -2.288  0.02216 * 
+RFTA           0.18045    0.20811   0.867  0.38588   
+RBLK           0.46003    0.31157   1.476  0.13981   
+RTOV           0.59634    0.40986   1.455  0.14568   
+dws            0.25562    0.23134   1.105  0.26917   
+bpm            0.39729    0.12493   3.180  0.00147 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 300.07  on 1048  degrees of freedom
+Residual deviance: 176.87  on 1042  degrees of freedom
+AIC: 190.87
+
+Number of Fisher Scoring iterations: 8
+
