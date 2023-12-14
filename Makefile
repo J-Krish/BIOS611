@@ -4,6 +4,7 @@ clean:
 	rm -rf figures
 	rm -rf derived_data
 	rm -rf .created-dirs
+	rm -rf report.pdf
 
 .created-dirs:
 	mkdir -p figures
