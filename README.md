@@ -49,4 +49,4 @@ into the RStudio terminal to generate the final report:
 ```{r}
 make clean
 make report.pdf
-``
+```
