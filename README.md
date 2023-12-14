@@ -36,7 +36,7 @@ docker run -v [present working directory]:/home/rstudio/work -e PASSWORD=[...]
 -e USERID=$(id -u) -e USERID=$(id -g) --rm -p 8787:8787 project
 ```
 
-Building the Project
+Making the Project Report
 =================
 Open a browser and visit https://localhost:8787 to connect to RStudio. Use 
 "rstudio" as the username and your specified password as your password. 
