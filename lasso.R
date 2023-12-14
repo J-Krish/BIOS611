@@ -19,6 +19,7 @@ df_model<- df_model %>% mutate_all(as.numeric)
 matrix<-as.matrix(df_model)
 
 #Lasso
+set.seed(123)
 lasso<-cv.glmnet(matrix, df$HOF, family=binomial, alpha=1)
 optimal<-lasso$lambda.min
 best <- glmnet(matrix, df$HOF, family=binomial, alpha = 1, lambda = optimal)
