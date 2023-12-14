@@ -1,0 +1,4 @@
+#Tinyverse/Latex outputs
+*.log
+*.aux
+*.out
